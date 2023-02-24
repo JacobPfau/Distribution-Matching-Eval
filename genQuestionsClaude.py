@@ -86,7 +86,7 @@ def main():
 
     if args.log==1:
         with open(PATH+'questions/'+timestamp+'_questions.csv', 'w', newline='') as f:
-            writer = csv.writer(f,QUOTE_ALL=True)
+            writer = csv.writer(f,quoting=csv.QUOTE_ALL)
             questions = [q.replace('\n', '') for q in questions]
             for q in questions: writer.writerow([q])
         with open(PATH+'questions/'+timestamp+"_hyperparameters.json", "w") as f:
