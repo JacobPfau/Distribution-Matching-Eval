@@ -8,7 +8,7 @@ This is an LM evaluation testing for unintended side-effects of RL fine-tuning. 
 
 ## Background
 
-Language models used with prompting are, in a sense, [conditioned predictive models (CPM)](https://www.lesswrong.com/s/n3utvGrgC2SGi9xQX/p/XwXmedJAo5m4r29eu). One particular implication of this view is considered in this repo: If an LM is prompted with conditional draws from a fixed distribution, then on the CPM view, LMs will converge to producing outputs which are also draws from the implicit distribution. In this repo the distribution in question is taken to be the [MATH dataset](https://github.com/hendrycks/math), and the prompt contains level-conditional draws from MATH. Here's an example prompt (newline formatting is broken):
+Language models used with prompting are, in a sense, [conditioned predictive models (CPM)](https://www.lesswrong.com/s/n3utvGrgC2SGi9xQX/p/XwXmedJAo5m4r29eu). One particular implication of this view is considered in this repo: If an LM is prompted with conditional draws from a fixed distribution, then on the CPM view, LMs will converge to producing outputs which are also draws from the implicit distribution. In this repo the distribution in question is taken to be the [MATH dataset](https://github.com/hendrycks/math), and the prompt contains level-conditional draws from MATH. Here's an example prompt:
 
 ~~~
 Level 2:
