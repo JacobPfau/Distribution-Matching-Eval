@@ -8,7 +8,7 @@ This is an LM evaluation testing for unintended side-effects of RL fine-tuning. 
 
 Language models used with prompting are, in a sense, [conditioned predictive models (CPM)](https://www.lesswrong.com/s/n3utvGrgC2SGi9xQX/p/XwXmedJAo5m4r29eu). One particular implication of this view is considered in this repo: If an LM is prompted with conditional draws from a fixed distribution, then on the CPM view, LMs will converge to producing outputs which are also draws from the implicit distribution. In this repo the distribution in question is taken to be the [MATH dataset](https://github.com/hendrycks/math), and the prompt contains level-conditional draws from MATH. Here's an example prompt (newline formatting is broken):
 
-'''
+~~~
 Level 2:
 Find the coefficient of $x$ when $3(x - 4) + 4(7 - 2x^2 + 5x) - 8(2x - 1)$ is simplified.
 Level 3:
@@ -28,7 +28,7 @@ Find the sum: $(-39) + (-37) + \cdots + (-1)$.
 Level 3:
 What is the positive difference between the two solutions of $|x + 5| = 20$?
 Level 3:
-'''
+~~~
 
 On the CPM view, if we randomize the few-shot examples, then we should expect LM outputs to match the MATH distribution. In particular, the LM's accuracy on MATH questions should equal its accuracy at answering LM-generated questions (generated in this way).
 
