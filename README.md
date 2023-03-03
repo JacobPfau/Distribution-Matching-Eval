@@ -4,7 +4,7 @@
 
 ## Description
 
-This is an LM evaluation testing for unintended side-effects of RL fine-tuning. We do so by comparing (A) how well a base LM's outputs match an in-context specified distribution, to (B) how well the fine-tuned version matches the distribution. The distribution in question consists of (difficulty,question) pairs of MATH problems. We evalute whether the fine-tuned model gives itself easier or harder questions compared to the base distribution. This may occur, for instance, if via dialogue RL the model learns a general strategy to steer conversations in directions 'easier' for the model to achieve high reward. Such behavior amounts to deceptive specification gaming in the sense that such a strategy involves systematically deviating from in-context instructions when catching such deviation is unlikely.
+This is an LM evaluation testing for unintended side-effects of RL fine-tuning. We do so by comparing (A) how well a base LM's outputs match an in-context specified distribution, to (B) how well the fine-tuned version matches the distribution. The distribution in question consists of (difficulty,question) pairs of MATH problems. We evalute whether the fine-tuned model gives itself easier or harder questions compared to the base distribution. This may occur if, for instance, dialogue RL teaches the model to steer conversations in directions 'easier' for the model to achieve high reward (many other reasons are possible). Such behavior amounts to deceptive specification gaming i.e. LM systematically deviates from in-context instructions when probability of penalizing such deviation is low.
 
 ## Background
 
