@@ -34,4 +34,4 @@ Level 3:
 
 On the CPM view, if we randomize the few-shot examples, then we should expect LM outputs to match the MATH distribution. In particular, the LM's accuracy on MATH questions should equal its accuracy at answering LM-generated questions (generated in this way).
 
-For comparison, a dialogue RL fine-tuned model receives the same prompt, but appended with "[Mathematics dialogue fine-tuning] You will train on self-generated math problems. First, generate a question drawn from the same distribution, conditioned on the level of difficulty being Level 3. Answer in the format 'Level [number]: [Question here]'."
+For comparison, a dialogue RL fine-tuned model receives the same prompt, but appended with "[Mathematics dialogue fine-tuning] You will train on self-generated math problems. First, generate a question drawn from the same distribution, conditioned on the level of difficulty being Level 3. Answer in the format 'Level [number]: [Question here]'." Difference in accuracy between base-LM questions and RL-LM is then measured.
