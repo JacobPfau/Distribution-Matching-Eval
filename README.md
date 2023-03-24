@@ -1,4 +1,4 @@
-# Distribution Matching Eval: Measuring whether RL tuning reduces our ability to control LMs via specifying distributions in-context
+# Distribution Matching Eval: Measuring whether fine-tuning reduces our ability to control LMs via specifying distributions in-context
 
 (WIP, repo doesn't yet implement below spec.)
 
